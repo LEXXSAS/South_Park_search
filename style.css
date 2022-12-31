@@ -283,6 +283,31 @@ form {
     }
   }
 
+  @media (max-width: 440px) {
+    .wrapper {
+      max-width: 1440px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+    }
+    img {
+      max-width: 85%;
+    }
+    .image {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      padding-top: 100px;
+      background-color: #4b4c75;
+      aspect-ratio: 1 / 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   @media (max-width: 425px) {
     .wrapper {
       max-width: 1440px;
