@@ -82,6 +82,12 @@ fetch(api)
 
     const searchInput = document.querySelector('.search');
     const searchOptions = document.querySelector('.options');
+    const searchLi = document.querySelectorAll('li');
+    for(let text of searchLi) {
+        let tli = text.innerText;
+        console.log(tli)
+    }
+
     const imgDiv = document.querySelector('.image');
 
     searchInput.addEventListener('change', displayOptions);
