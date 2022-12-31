@@ -1,37 +1,8 @@
-// const api = 
-// `https://raw.githubusercontent.com/LEXXSAS/json_test/cd23cdf66861d7098baf92eefff1acc495cf9419/50_random_users.json`;
 
-// const users = [];
-// let newList = [];
-
-// let searchForm = document.querySelector('.form');
-// searchForm.search.addEventListener('keyup', () => {
-//     if(searchForm.search.value.length > 0) {
-//         fetch(api)
-//         .then(response => response.json())
-//         .then(data => {
-//             const inpName = document.getElementById('search').value
-//             for (const user of data) {
-//                 let userName = user.name.first;
-                
-//                 if (userName.includes(inpName) == true) {
-//                     // newList.push(userName);
-//                     console.log(user.name.first)
-//                 }
-                
-//             }
-//         });
-//     } else 
-//         console.clear()
-   
-// })
-
-
-// const api = 
-// `https://raw.githubusercontent.com/LEXXSAS/json_test/cd23cdf66861d7098baf92eefff1acc495cf9419/50_random_users.json`;
-
-// const api = 
-// `https://raw.githubusercontent.com/LEXXSAS/json_test/main/southPark.json`;
+const searchInput = document.querySelector('.search');
+const searchOptions = document.querySelector('.options');
+const searchLi = document.querySelectorAll('li');
+const imgDiv = document.querySelector('.image');
 
 const api = 
 `https://raw.githubusercontent.com/LEXXSAS/json_test/main/southPark.json`;
@@ -66,29 +37,60 @@ fetch(api)
         const html = options.map(character => {
             const regex = new RegExp(this.value, 'gi');
             const characterImage = character.url;
-            console.log(characterImage)
+            // console.log(characterImage)
+            console.log(character.id)
+            const allP = document.querySelectorAll('.search-list-item');
+            // allP.addEventListener('click', (event) => {console.log(event.target)});
             imgDiv.innerHTML = `<img src = "${characterImage}">`;
             const characterName = character.name.replace(regex, 
                 `<span class="hl">${this.value}</span>`
                 )
-            return `<li><span>${characterName}</span></li>`
+            return `<li><span>${characterName}<p data-id = "${character.id}" class="search-list-item"></p></span></li>`
         })
         .slice(0, 10)
         .join('');
 
+        searchOptions.addEventListener('click', (event) => {
+            let evTarget = event.target;
+            let tTarget = evTarget.querySelector('.search-list-item');
+            let twoTarget = tTarget.dataset.id;
+            let singleData = characters.filter(singleData => {
+                return twoTarget === singleData.id;
+                
+            })
+            singleData.forEach((item) => {
+                let newData = item.url;
+                console.log(newData)
+                imgDiv.innerHTML = `<img src = "${newData}">`;
+                searchOptions.innerHTML = '';
+                searchInput.value = '';
+            })
+            
+        })
+      
         searchOptions.innerHTML = this.value ? html : null;
         // imgDiv.innerHTML = this.value ? html : null;
     }
 
-    const searchInput = document.querySelector('.search');
-    const searchOptions = document.querySelector('.options');
-    const searchLi = document.querySelectorAll('li');
+
     for(let text of searchLi) {
         let tli = text.innerText;
         console.log(tli)
     }
 
-    const imgDiv = document.querySelector('.image');
+    // searchOptions.addEventListener('click', (event) => {
+    //     let searchId = event.target.dataset.id;
+    //     let singleData = characters.results.filter(singleData => {
+    //         return searchId === singleData.id;
+    //     })
+    //     console.log(singleData)
+    //     searchOptions.innerHTML = '';
 
-    searchInput.addEventListener('change', displayOptions);
+    // });
+
+
+    // searchInput.addEventListener('change', displayOptions);
+    searchInput.addEventListener('keydown', displayOptions);
     searchInput.addEventListener('keyup', displayOptions);
+        // imgDiv.innerHTML = `<img src = "${characterImage}">`;
+        // showSuperheroDetails(singleData);
