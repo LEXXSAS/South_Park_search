@@ -248,7 +248,7 @@ form {
       z-index: -1;
       padding-top: 6em;
       background-color: #4b4c75;
-      aspect-ratio: 3 / 3;
+      aspect-ratio: 2 / 3;
       display: flex;
       align-items: center;
       justify-content: center;
