@@ -264,6 +264,13 @@ form {
       flex-direction: column;
       margin: 0;
     }
+    .hdiv {
+    padding: 31px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    }
+    input.search {
+      font-size: 30px;
     form {
       margin-top: 0;
     }
