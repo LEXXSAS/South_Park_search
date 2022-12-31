@@ -7,13 +7,13 @@
         "id":"0",
         "name":"Кайл",
         "age": 10,
-        "url": "image/user01.png"
+        "url": "image/user03.png"
       },
       {
         "id":"1",
         "name":"Кенни",
         "age": 9,
-        "url": "image/user01.png"
+        "url": "image/user02.png"
       },
       {
         "id":"2",
@@ -25,19 +25,19 @@
         "id":"3",
         "name":"Картман",
         "age": 10,
-        "url": "image/user01.png"
+        "url": "image/user04.png"
       },
       {
         "id":"4",
         "name":"Ребекка Котсвальд",
         "age": 10,
-        "url": "image/user01.png"
+        "url": "image/user07.png"
       },
       {
         "id":"5",
         "name":"Майкл",
         "age": 10,
-        "url": "image/user01.png"
+        "url": "image/user05.png"
       }
     ]
   }
