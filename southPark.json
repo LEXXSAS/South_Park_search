@@ -6,32 +6,38 @@
       {
         "id":"0",
         "name":"Кайл",
-        "age": 10
+        "age": 10,
+        "url": "https://drive.google.com/file/d/1ZTqvsQuiQrmXTiv3c3fb-wLjAUMLnxFP/view?usp=sharing"
       },
       {
         "id":"1",
         "name":"Кенни",
-        "age": 9
+        "age": 9,
+        "url": "https://drive.google.com/file/d/1ole3wBwLEVk5QG_a9ky7ItniW88RiuZj/view?usp=sharing"
       },
       {
         "id":"2",
         "name":"Стэн",
-        "age": 10
+        "age": 10,
+        "url": "https://drive.google.com/file/d/1aZjLgV0CrIhkMXp3hKZrCc0EHrxZjj63/view?usp=sharing"
       },
       {
         "id":"3",
         "name":"Картман",
-        "age": 10
+        "age": 10,
+        "url": "https://drive.google.com/file/d/1Higm0WRsirksiXR9wYmNrEYhCasQeaRX/view?usp=sharing"
       },
       {
         "id":"4",
         "name":"Ребекка Котсвальд",
-        "age": 10
+        "age": 10,
+        "url": "https://drive.google.com/file/d/1zoiLroN2FDPxn_ovNp752TsHZsZHOUZv/view?usp=sharing"
       },
       {
         "id":"5",
         "name":"Майкл",
-        "age": 10
+        "age": 10,
+        "url": "https://drive.google.com/file/d/1BBcJjXsyQWjcxmANxftMQuNtiQJ8hehn/view?usp=sharing"
       }
     ]
   }
