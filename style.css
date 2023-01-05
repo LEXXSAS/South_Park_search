@@ -255,7 +255,7 @@ form {
     }
   }
 
-@media (max-width: 540px) and @media (max-height: 820px) {
+@media (max-width: 540px) and @media (max-height: 800px) {
       .image {
       position: absolute;
       inset: 0;
