@@ -33,7 +33,7 @@ fetch(api)
     function displayOptions() {
         
         
-        input.onchange = function() {
+        searchInput.onchange = function() {
         let name = searchInput.value;
         let per_name =/^[А-Я]$/i;
         if(name == !per_name && name !== ''){
