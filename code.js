@@ -38,6 +38,7 @@ fetch(api)
         if(name == !per_name){
         let text = "Разрешены только русские буквы";
         alert(text);
+        }
       
 
 
