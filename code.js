@@ -32,13 +32,6 @@ fetch(api)
 
     function displayOptions() {
         
-        let name = searchInput.value;
-        let perName =/^[А-Я]$/i;
-        if(name == !perName && name.lenght < 1){
-        let text = "Разрешены только русские буквы";
-        console.log(text);
-        } 
-
         const options = getOptions(this.value, characters);
         
         const html = options.map(character => {
